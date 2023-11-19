@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  height: 70px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+nav img {
+  height: 50px;
+  width: 50px;
+}
+.nav_cat_items {
+  display: flex;
+  gap: 10px;
+
+}
+.nav_profile_items {
+  display: flex;
+  gap: 10px;
+}
+li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+.search_bar {
+  border: 1px solid;
+  height: 35px;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(236, 236, 236);
+}
+#search {
+  width: 300px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+* :focus {
+  outline: none;
+}
+#search :hover {
+  background-color: none;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.icons li {
+  font-size: 10px;
+}
+.menu{
+  display: none;
+}
+
+ /* Main Banner Container*/
+  .banner_container {
+    margin: 70px 0px;
+  }
+  .banner_container img {
+  width:100%;
+  }
+.category_heading{
+  font-size: 25px;
+  font-weight: 800;
+  margin: 20px 10px;
+}
+.items{
+  display: flex;
+   flex-wrap: wrap;
+}
+.items img{
+  height: auto;
+  width: 15%;
+}
+
+footer{
+  background-color: rgba(210, 215, 211,1);
+  height: 20vh;
+}
+footer ul{
+  display: flex;
+  justify-content:center;
+
+  gap: 130px;
+}
+footer ul li{
+  margin-top: 30px;
+  font-size:13px;
+  font-weight: 600;
+  color: black;
+}
+.online_shopping{
+  margin: 10px 0px;
+   display: flex;
+   flex-direction: column; 
+}
+.customer_policies{
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.online_shopping a{
+     text-decoration: none;
+     color:whitesmoke;
+     font-weight: 800;
+
+}
+.customer_policies a{
+  text-decoration: none;
+ color:whitesmoke;
+  font-weight: 800;
+}
+@media screen and (max-width: 1065px) {
+  .nav_cat_items {
+    display: none;
+   
+  }
+  .nav_profile_items {
+    display: none;
+  }
+
+.menu{
+  display:block;
+}
+}
